@@ -16,11 +16,11 @@ def crawl_main_page(url, path, csv_file_read, csv_file_write):
     ''' This crawler iterates through a list of links to linkedin profiles and
         scrapes the number of contacts those profiles have.
 
-    :param url: Url that points to the main page
-    :param path: General path to the files
-    :param csv_file_read: Path to the file from which the data is read
-    :param csv_file_write:     # Path to the file to which the data is writen
-    :return:
+        Args:
+            url: Url that points to the main page
+            path: General path to the files
+            csv_file_read: Path to the file from which the data is read
+            csv_file_write:     # Path to the file to which the data is writen
     '''
 
     # You have two choices for scraping:

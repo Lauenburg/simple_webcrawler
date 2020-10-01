@@ -8,10 +8,11 @@ def company_spider(max_pages, path, csv_file, csv_header):
     ''' Crawls over a page and retrieves all the links defined
         by the "attributes" and "elements" below
 
-    :param max_pages: Number of pages of which to crawl
-    :param path: General path for where the csv-file should be saved 
-    :param csv_file: Name of the csv-file
-    :param csv_header: Header for the csv
+        Args
+            max_pages: Number of pages of which to crawl
+            path: General path for where the csv-file should be saved 
+            csv_file: Name of the csv-file
+            csv_header: Header for the csv
  
     :return:
         A dictionary containing the retrieved name, address and  
@@ -46,7 +47,8 @@ def get_single_item_data(item_url):
     ''' Retrieves the name, the web address, and the address from
         the from the page item_url.
         
-        :param item_url: Link to the page from which to retrieve the data
+        Args:
+            item_url: Link to the page from which to retrieve the data
 
     '''
     # Retrieve the websites information and convert it according to BeautifulSoup's requirements 
